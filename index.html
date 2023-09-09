@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="GDSC-Task" content="width=device-width, initial-scale=1.0">
+    <title>GDSC-Adesh Bode</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/df0b786508.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
+
+</head>
+<body >
+    <header class="header">
+
+        <a class="logo" href="index.html">
+            <img src="resource/gdsclogo.svg">
+            <div>GDSC RCOEM</div>
+        </a>
+        <div class="navbar">
+            <div class="navlinks">
+                <a target="blank" href="#" id="active">Home</a>
+                <a target="blank" href="#">Events</a>
+                <a target="blank" href="#">Team</a>
+                <a target="blank" href="#">Alumni</a>
+                <a target="blank" href="#">Contact</a>
+            </div>
+            <button class="mode">
+                <i class="bi bi-brightness-high-fill"></i>
+            </button>
+        </div>
+    </header>
+
+    <img class="img1" src="resource/plane.svg">
+    <img class="img2" src="resource/trace.svg">
+    <section class="hero">
+        <h1>Google Developer Student Clubs</h1>
+        <h2>RCOEM Chapter</h2>
+        <img src="resource/hero-illustration.svg">
+        <p>Google Developer Student Clubs are community groups for college and university students interested in Google developer technologies.</p>
+        <button class="joinus" href="#" target="blank">JOIN US</button>
+    </section>
+    <div class="transition">
+        <div class="down">
+            <i class="fa-solid fa-chevron-down fa-2x"></i>
+            <i class="fa-solid fa-chevron-down fa-2x"></i>
+            <i class="fa-solid fa-chevron-down fa-2x"></i>
+        </div>
+        <h3>Get To Know Us!</h3>
+        
+    </div>
+    
+    <section class="mission">
+        
+        <h1>Our Mission </h1>
+        <div class="content">
+            <img src="resource/teamwork.svg">
+            <p>Our mission involves community engagement, leadership development, building strong tech foundation, while enabling all tech enthusiasts to contribute to the global society.</p>
+        </div>
+        
+    </section>
+    
+    <section class="prespective">
+        <h1>Our Perspective </h1>
+        <div class="content">
+            <p id="prespective-p" >We're a community-driven initiative aiming to bridge the gap between research and practice , develop evolutionary thinking and network throughout the process. We believe in connecting fellow developers , spreading stimulative ideas and working for a solution driven team.</p>
+            <img src="resource/prespective.svg">
+        </div>
+    </section>
+
+    <section class="what">
+        <h1>What Keeps Us Going?</h1>
+        <div class="content" >
+            <img src="resource/Group.svg">
+            <p id="what">Our club helps students to connect, learn, empower and grow. Teamwork, innovative thinking, communication, and leading with solutions is what helps us achieve new heights.<br>The entire team works in coordination, to inspire and motivate the upcoming coding community to evolve their skills and broaden their horizons
+            </section>
+            
+            <section class="results">
+                <div  class="result">
+                    <div class="numbers">
+                        03+
+                    </div>
+                    <h1>Years</h1>
+                </div>
+        <div class="result">
+            <div class="numbers">
+                10+
+            </div>
+            <h1>Events</h1>
+        </div>
+        <div class="result">
+            <div class="numbers">
+                1K+
+            </div>
+            <h1>Community Members</h1>
+        </div>
+        <div class="result">
+            <div class="numbers">
+                200+
+            </div>
+            <h1>Attendees</h1>
+        </div>
+    </section>
+    
+    
+    <section class="technologies">
+        <div class="heading">
+            <div>
+                <div class="line">
+                    <h1>Technologies</h1>
+                </div>
+            </div>
+        </div>
+        <h2>Domains That Excite Us to Collaborate and Teach!</h2>
+        <div class="display">
+            <div class="box">
+                <img src="resource/android.svg">
+                <h1>Android</h1>
+                <p id="p1">Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.</p>
+                <i onclick="replace1()" class="fa-solid fa-chevron-down fa-1x" id="techdown">
+                <script>
+                    function replace1()
+                    {
+                        document.getElementById("p1").innerHTML+="<style> #p1{ display:block}</style>"
+                    }
+                </script>
+                </i>
+            </div>
+            <div class="box">
+                <img src="resource/flutter.svg">
+                <h1>Flutter</h1>
+                <p id="p2">Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source.</p>
+                <i onclick="replace2()" class="fa-solid fa-chevron-down fa-1x" id="techdown">
+                
+                <script>
+                    function replace2()
+                    {
+                        document.getElementById("p2").innerHTML+="<style> #p2{ display:block}</style>"
+                    }
+                </script>
+                </i>
+            </div>
+            <div class="box">
+                <img src="resource/gcloud.svg">
+                <h1>Cloud</h1>
+                <p id="p3">Google Cloud Platform (GCP) is a platform that offers a wide variety of services in the field of cloud computing. These services include compute, database, storage, migration, and networking</p>
+                <i onclick="replace3()" class="fa-solid fa-chevron-down fa-1x" id="techdown">
+                <script>
+                    function replace3()
+                    {
+                        document.getElementById("p3").innerHTML+="<style> #p3{ display:block}</style>"
+                    }
+                </script>
+                
+                </i>
+            </div>    
+        </div>
+    </section>
+    
+    <section class="faq">
+        <h1>FAQs</h1>
+        <div class="questions">
+            
+            <div class="query">
+                <div  class="s">
+                    <i onclick="answer1()" class="fa-solid fa-chevron-down fa-1x" style="color: #DB4437 ;">
+                        <script>
+                            function answer1()
+                            {
+                                document.getElementById("a1").innerHTML+="<style> #a1{ display:block}</style>"
+                            }
+                        </script>
+                    </i>
+                    What is GDSC?
+                    
+                </div>
+                <div class="a" id="a1">
+                    Google Developer Student Clubs (GDSC) are community groups for college and university students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.
+                </div>
+                
+            </div>
+            <div class="query">
+                <div class="s">
+                    <i onclick="answer2()"class="fa-solid fa-chevron-down fa-1x" style="color:#0F9D56 ;">
+                        <script>
+                            function answer2()
+                            {
+                                document.getElementById("a2").innerHTML+="<style> #a2{ display:block}</style>"
+                            }
+                        </script>
+                    </i>
+                    How can you become a part of GDSC ?
+                </div>
+                <div class="a" id="a2">
+                    We conduct an annual team recruitment process. The details of recruitment are posted online a few weeks prior. It’s a two step process involving form filling and personal interview. Students acing both rounds are selected to be the part of the core team.
+                </div>
+            </div>
+            <div class="query">
+                <div class="s">
+                    <i onclick="answer3()" class="fa-solid fa-chevron-down fa-1x" style="color: #4285F4 ;">
+                        <script>
+                            function answer3()
+                            {
+                                document.getElementById("a3").innerHTML+="<style> #a3{ display:block}</style>"
+                            }
+                        </script>
+                    </i>
+                    What does a GDSC Lead do?
+                </div>
+                <div class="a" id="a3">
+                    A GDSC Lead fills a lot of shoes. He works with the university to build the club, recruit the core team, host workshops, build projects, collaborate with local partners.
+                </div>
+            </div>
+            <div class="query">
+                <div class="s">
+                    <i onclick="answer4()" class="fa-solid fa-chevron-down fa-1x" style="color: #F4B400;">
+                        <script>
+                            function answer4()
+                            {
+                                document.getElementById("a4").innerHTML+="<style> #a4{ display:block}</style>"
+                            }
+                        </script>
+                    </i>
+                    How is DSC related to Google?
+                </div>
+                <div class="a" id="a4">
+                    A GDSC Lead fills a lot of shoes. He works with the university to build the club, recruit the core team, host workshops, build projects, collaborate with local partners.
+                </div>
+            </div>
+            <div class="query">
+                <div class="s">
+                    <i onclick="answer5()" class="fa-solid fa-chevron-down fa-1x " style="color:#DB4437;">
+                        <script>
+                            function answer5()
+                            {
+                                document.getElementById("a5").innerHTML+="<style> #a5{ display:block}</style>"
+                            }
+                        </script>
+                    </i>
+                    How to reach us?
+                </div>
+                <div class="a" id="a5">
+                    Mail us at "dsc.rknec@gmail.com "
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="upper">
+
+            <div class="name">
+                <img src="resource/gdsclogo.svg">
+            <h4>Students Developer Students Club</h3>
+            <h5>RCOEM</h4>
+            </div>
+            <div class="contactus">
+                <div class="location">
+                    <i class="bi bi-geo-alt"></i> 
+                    <h6>Shri Ramdeobaba College of Engineering and Management, Ramdeo Tekdi, Gittikhadan,Katol Road,Nagpur- 440013</h6>
+                </div>
+                <div class="email">
+                    <i class="bi bi-envelope-at"></i>
+                    <h4>dsc.rknec@gmail.com</h3>
+                </div>
+            </div>
+            <div class="smi">
+                <h3>Follow Us:</h3>
+                <div class="icons">
+                    <a href="#" ><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                    <a href="#" ><i class="fa-brands fa-linkedin-in" style="color: #000000;"></i></a>
+                    <a href="#" ><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+                </div>
+            </div>    
+        </div>
+        <div class="lower">
+            <h5>Made with <i class="fa-solid fa-heart" style="color: #000000;"></i> for GDSC</h5>
+        </div>
+
+        
+    </footer>
+
+
+</body>
+</html>
+
+<!-- 
+    CDN: customer distribution network...
+    - first see similarity with section here mission, prepective, what keep...ek he hath mai lee lo(name it same class)...plan a section model..
+    agar 2 3 baar padding define kar rahe ho toh socho better way mil skta hai...
+    flex-start is good....
+    learnt about defer attribute while linking js it says load js after html
+-->
