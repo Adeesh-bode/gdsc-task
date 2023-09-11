@@ -2,6 +2,7 @@
 {
     --clr-light:white;
     --clr-dark:black;
+    --clr-light-heading:
 }
 
 *
@@ -35,7 +36,7 @@ body
     width: 100%;
     height:55px;
 
-    padding: 10px;
+    padding: 10px; /* Learnt more about padding and margin -clarified: margin us object k baar se padding anadar ka mamla... */
     
     display: flex;
     justify-content: space-between;
@@ -43,6 +44,8 @@ body
     box-shadow: 0px 4px 4px 0px #00000040;
     
     color: #868686;
+
+    /* shadow */
     
 }
 
@@ -56,7 +59,8 @@ body
     width: 15%;
     
     color: #868686;
-
+    
+    cursor: pointer;
 }
 .header .logo img
 {
@@ -120,10 +124,13 @@ body
     border: none;
     border-radius: 100px;
     
-    padding: 4px;
+    padding: 6px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
+
+    cursor: pointer;
+    
 
 }
 .mode:hover
@@ -134,13 +141,33 @@ body
 .mode i
 {
     color: #FCB912;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     background-color: white;
     border-radius: 50%;
-
+    
     font-size: 1.2rem;
-
+    
+    padding: 3px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#darkmode
+{
+    background-color: black;
+    color: white;
+    
+    display: none;
+    
+    font-size: 1rem;
+    
+}
+#lightmode
+{
+    font-size: 1rem;
+    
 }
 .hero
 {
@@ -161,11 +188,13 @@ body
     position: absolute;
     height: 100px;
     width: 100px;
-
+    
     z-index: -1;
 
     top:60px;
     left:1050px;
+
+    
 }
 .img2
 {
@@ -182,7 +211,7 @@ body
     font-size: 3.2rem;
     font-weight: 800;
     letter-spacing:2px;
-
+    
 
     
     background: linear-gradient(90deg,#EA4435,#547DBF ,#F9BC15 ,#33A852);
@@ -236,9 +265,10 @@ body
     font-size: 1.2rem;
     padding: 8px;
     color: white;
-
+    
     transition: transform 400ms ease;
-
+    
+    cursor: pointer;
 }
 .joinus:hover
 {
@@ -279,6 +309,7 @@ body
     color:#5F5F5F;
 
 }
+
 /* Mission Section*/
 
 .mission 
@@ -292,16 +323,18 @@ body
     gap:100px;
     
     padding:40px;
+    
+    
 }
 .mission h1
 {
     font-size: 2.5rem;
     font-weight: 700;
     color:#353535;
-
+    
     padding-bottom:20px ;
     border-bottom: 6px solid #4285F4;
-
+    
 }
 
 .mission .content
@@ -336,8 +369,8 @@ body
     text-align: right;
     
     padding: 30px;
-
-
+    
+    
 }
 
 
@@ -357,6 +390,8 @@ body
     
     padding-left:40px;
     padding-right:40px;
+
+
 }
 .prespective h1
 {
@@ -366,8 +401,8 @@ body
     
     padding-bottom:20px ;
     border-bottom: 6px solid #0F9D56;
-
-
+    
+    
 }
 
 .prespective .content
@@ -400,12 +435,12 @@ body
     align-items: center;
     
     color:#5F5F5F;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: left;
     
     padding: 30px;
-
-
+    
+    
 }
 
 
@@ -416,7 +451,7 @@ body
 
 .what  
 {
-    height: 100vh;
+    max-height: 100vh;
     
     display: flex;
     flex-direction: column;
@@ -432,10 +467,10 @@ body
     font-size: 2.5rem;
     font-weight: 700;
     color:#353535;
-
+    
     border-bottom: 6px solid #DB4437;
     ;
-
+    
     padding-bottom:20px ;
 
 }
@@ -446,7 +481,7 @@ body
     align-items: center;
     width:100%;
     height:300px;
- 
+    
     padding-right: 100px;
     padding-left: 100px;   
 }
@@ -469,18 +504,18 @@ body
     align-items: center;
     
     color:#5F5F5F;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: right;
     
     padding: 30px;
 
-
+    
 }
 
 /*               RESULTS                                                */
 .results
 {
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     
     display: flex;
@@ -488,7 +523,7 @@ body
     align-items: center;
     gap:100px;
 
-    padding: 50px;
+    padding: 120px;
 
 
 }
@@ -501,7 +536,7 @@ body
     flex-direction: column;
     justify-content: start;
     align-items: center;
-
+    
     gap:20px;
 }
 .results .numbers
@@ -522,9 +557,29 @@ body
     
     color: #5F5F5F;
     
-    transition: transform 500ms ease;
+    /* animation:rotate 8s ease-in-out infinite;  is possible if ring not a bg image...*/
+
+    transition : transform 500ms ease;
 
 }
+/*
+@keyframes rotation 
+{
+    0%
+    {
+        transform: rotate(0deg);    
+    }
+    50%
+    {
+        transform: rotate(180deg);    
+    }
+    100%
+    {
+        transform: rotate(360deg);    
+    }
+
+}
+*/
 .numbers:hover
 {
     transform: scale(1.2);
@@ -536,9 +591,9 @@ body
     color: #353535;
     font-size: 1.8rem;
     width: 210;
-
+    
     transition: transform 400ms ease;
-
+    
 }
 
 .results h1:hover
@@ -575,13 +630,13 @@ body
 }
 .technologies .heading h1
 {   
-
+    
     font-size: 3rem;
     color:#353535;
     
     display: inline-block;
     background-color: white;
-
+    
     padding: 10px;
 }
 .heading .line
@@ -589,7 +644,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     width:100%;
     height: 5px;
     background-color: red;
@@ -630,7 +685,7 @@ body
     padding-bottom: 20px;
     
     overflow: auto;
-
+    
     
 }
 .box::-webkit-scrollbar
@@ -645,7 +700,7 @@ body
 {
     border-top: 6px solid #DB4437;
     border-bottom: 6px solid #DB4437;
-
+    
 }
 .box:nth-child(2)
 {
@@ -667,7 +722,7 @@ body
 .box h1
 {
     color: #5F5F5F;
-
+    
     display: flex;
     align-items: center;
 }
@@ -682,6 +737,10 @@ body
     text-align: center;
     color: #646464;
 }
+.box i
+{
+    cursor: pointer;
+}
 
 
 .faq
@@ -694,6 +753,9 @@ body
     align-items: center;
     gap:20px;
     padding-bottom: 20px;
+    
+    
+    
 }
 .faq ::-webkit-scrollbar
 {
@@ -713,7 +775,11 @@ body
     gap:20px;
     
     overflow: auto;
-
+    
+}
+.questions i
+{
+    cursor: pointer;
 }
 .questions .query
 {
@@ -721,13 +787,14 @@ body
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    
     gap:10px;
-
+    
 }
 .questions .s
 {   
-
+    /* color: #868686; */
+    
     width: 655px;
     height: 40px;
     
@@ -741,6 +808,7 @@ body
     align-items: center;
     gap:12px;
     
+    cursor: pointer;
 }
 
 .questions .a
@@ -752,7 +820,7 @@ body
     border-radius: 12px;
     
     padding: 10px;
-
+    
     width: 500px;
     
 }
@@ -785,6 +853,7 @@ body
 {
     
     background: linear-gradient(270deg, #4285F4 -7.42%, rgba(61, 120, 218, 0.5) 53.4%, rgba(255, 255, 255, 0) 116.26%);
+    /* background:var(--gradient); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -853,3 +922,11 @@ body
     border-radius: 50%;
     padding: 10px;
 }
+
+/*
+@media screen and (max-width: 768px) {
+    .hero {
+      max-height: 100vh;
+    }
+}
+*/  
