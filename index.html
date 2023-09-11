@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script defer src="index.js"></script>
-
+    <link rel="icon" type="image/jpg" href="resource/gdsclogo.svg">
 </head>
 <body >
     <header class="header">
@@ -30,14 +30,15 @@
                 <a target="blank" href="#">Alumni</a>
                 <a target="blank" href="#">Contact</a>
             </div>
-            <button class="mode">
-                <i class="bi bi-brightness-high-fill"></i>
+            <button class="mode" id="mode">
+                <i id="lightmode" class="bi bi-brightness-high-fill"></i>
+                <i id="darkmode" class="bi bi-moon-stars-fill"></i>
             </button>
         </div>
     </header>
 
-    <img class="img1" src="resource/plane.svg">
-    <img class="img2" src="resource/trace.svg">
+    <img class="img1" id="plane" src="resource/plane.svg">
+    <img class="img2"  src="resource/trace.svg">
     <section class="hero">
         <h1>Google Developer Student Clubs</h1>
         <h2>RCOEM Chapter</h2>
@@ -118,42 +119,72 @@
         </div>
         <h2>Domains That Excite Us to Collaborate and Teach!</h2>
         <div class="display">
-            <div class="box">
+            <div class="box" onclick="replace1()">
                 <img src="resource/android.svg">
                 <h1>Android</h1>
                 <p id="p1">Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.</p>
-                <i onclick="replace1()" class="fa-solid fa-chevron-down fa-1x" id="techdown">
+                <i  class="fa-solid fa-chevron-down fa-1x" id="techdown">
                 <script>
+                    let extend1=true;
                     function replace1()
-                    {
-                        document.getElementById("p1").innerHTML+="<style> #p1{ display:block}</style>"
+                    {   
+                        if(extend1==true)
+                        {
+                            document.getElementById("p1").innerHTML+="<style> #p1{ display:block}</style>"
+                            extend1=false;
+                        }
+                        else
+                        {
+                            document.getElementById("p1").innerHTML+="<style> #p1{ display:none}</style>"
+                            extend1=true;
+                        }
                     }
                 </script>
                 </i>
             </div>
-            <div class="box">
+            <div class="box" onclick="replace2()">
                 <img src="resource/flutter.svg">
                 <h1>Flutter</h1>
                 <p id="p2">Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source.</p>
-                <i onclick="replace2()" class="fa-solid fa-chevron-down fa-1x" id="techdown">
+                <i  class="fa-solid fa-chevron-down fa-1x" id="techdown">
                 
                 <script>
+                    let extend2=true;
                     function replace2()
-                    {
-                        document.getElementById("p2").innerHTML+="<style> #p2{ display:block}</style>"
+                    {   
+                        if(extend2==true)
+                        {
+                            document.getElementById("p2").innerHTML+="<style> #p2{ display:block}</style>"
+                            extend2=false;
+                        }
+                        else
+                        {
+                            document.getElementById("p2").innerHTML+="<style> #p2{ display:none}</style>"
+                            extend2=true;
+                        }
                     }
                 </script>
                 </i>
             </div>
-            <div class="box">
+            <div class="box" onclick="replace3()">
                 <img src="resource/gcloud.svg">
                 <h1>Cloud</h1>
                 <p id="p3">Google Cloud Platform (GCP) is a platform that offers a wide variety of services in the field of cloud computing. These services include compute, database, storage, migration, and networking</p>
-                <i onclick="replace3()" class="fa-solid fa-chevron-down fa-1x" id="techdown">
+                <i  class="fa-solid fa-chevron-down fa-1x" id="techdown">
                 <script>
+                    let extend3=true;
                     function replace3()
-                    {
-                        document.getElementById("p3").innerHTML+="<style> #p3{ display:block}</style>"
+                    {   
+                        if(extend3==true)
+                        {
+                            document.getElementById("p3").innerHTML+="<style> #p3{ display:block}</style>"
+                            extend3=false;
+                        }
+                        else
+                        {
+                            document.getElementById("p3").innerHTML+="<style> #p3{ display:none}</style>"
+                            extend3=true;
+                        }
                     }
                 </script>
                 
@@ -166,13 +197,25 @@
         <h1>FAQs</h1>
         <div class="questions">
             
-            <div class="query">
-                <div  class="s">
-                    <i onclick="answer1()" class="fa-solid fa-chevron-down fa-1x" style="color: #DB4437 ;">
+            <div class="query" >
+                <div  class="s" onclick="answer1()">
+                    <i  class="fa-solid fa-chevron-down fa-1x" style="color: #DB4437 ;">
                         <script>
+                            let answerto1=true;
                             function answer1()
                             {
-                                document.getElementById("a1").innerHTML+="<style> #a1{ display:block}</style>"
+                                if(answerto1==true)
+                                {
+                                    document.getElementById("a1").innerHTML+="<style> #a1{ display:block}</style>"
+                                    answerto1=false;
+                                }
+                                else
+                                {
+                                    document.getElementById("a1").innerHTML+="<style> #a1{ display:none}</style>"
+                                    answerto1=true;
+                                    
+                                }
+                                
                             }
                         </script>
                     </i>
@@ -185,12 +228,24 @@
                 
             </div>
             <div class="query">
-                <div class="s">
-                    <i onclick="answer2()"class="fa-solid fa-chevron-down fa-1x" style="color:#0F9D56 ;">
+                <div class="s" onclick="answer2()">
+                    <i class="fa-solid fa-chevron-down fa-1x" style="color:#0F9D56 ;">
                         <script>
+                            let answerto2=true;
                             function answer2()
                             {
-                                document.getElementById("a2").innerHTML+="<style> #a2{ display:block}</style>"
+                                if(answerto2==true)
+                                {
+                                    document.getElementById("a2").innerHTML+="<style> #a2{ display:block}</style>"
+                                    answerto2=false;
+                                }
+                                else
+                                {
+                                    document.getElementById("a2").innerHTML+="<style> #a2{ display:none}</style>"
+                                    answerto2=true;
+                                    
+                                }
+                                
                             }
                         </script>
                     </i>
@@ -201,12 +256,24 @@
                 </div>
             </div>
             <div class="query">
-                <div class="s">
-                    <i onclick="answer3()" class="fa-solid fa-chevron-down fa-1x" style="color: #4285F4 ;">
+                <div class="s" onclick="answer3()">
+                    <i  class="fa-solid fa-chevron-down fa-1x" style="color: #4285F4 ;">
                         <script>
+                            let answerto3=true;
                             function answer3()
                             {
-                                document.getElementById("a3").innerHTML+="<style> #a3{ display:block}</style>"
+                                if(answerto3==true)
+                                {
+                                    document.getElementById("a3").innerHTML+="<style> #a3{ display:block}</style>"
+                                    answerto3=false;
+                                }
+                                else
+                                {
+                                    document.getElementById("a3").innerHTML+="<style> #a3{ display:none}</style>"
+                                    answerto3=true;
+                                    
+                                }
+                                
                             }
                         </script>
                     </i>
@@ -217,12 +284,24 @@
                 </div>
             </div>
             <div class="query">
-                <div class="s">
-                    <i onclick="answer4()" class="fa-solid fa-chevron-down fa-1x" style="color: #F4B400;">
+                <div class="s" onclick="answer4()">
+                    <i  class="fa-solid fa-chevron-down fa-1x" style="color: #F4B400;">
                         <script>
+                            let answerto4=true;
                             function answer4()
                             {
-                                document.getElementById("a4").innerHTML+="<style> #a4{ display:block}</style>"
+                                if(answerto4==true)
+                                {
+                                    document.getElementById("a4").innerHTML+="<style> #a4{ display:block}</style>"
+                                    answerto4=false;
+                                }
+                                else
+                                {
+                                    document.getElementById("a4").innerHTML+="<style> #a4{ display:none}</style>"
+                                    answerto4=true;
+                                    
+                                }
+                                
                             }
                         </script>
                     </i>
@@ -233,12 +312,24 @@
                 </div>
             </div>
             <div class="query">
-                <div class="s">
-                    <i onclick="answer5()" class="fa-solid fa-chevron-down fa-1x " style="color:#DB4437;">
+                <div class="s" onclick="answer5()">
+                    <i  class="fa-solid fa-chevron-down fa-1x " style="color:#DB4437;">
                         <script>
+                            let answerto5=true;
                             function answer5()
                             {
-                                document.getElementById("a5").innerHTML+="<style> #a5{ display:block}</style>"
+                                if(answerto5==true)
+                                {
+                                    document.getElementById("a5").innerHTML+="<style> #a5{ display:block}</style>"
+                                    answerto5=false;
+                                }
+                                else
+                                {
+                                    document.getElementById("a5").innerHTML+="<style> #a5{ display:none}</style>"
+                                    answerto5=true;
+                                    
+                                }
+                                
                             }
                         </script>
                     </i>
@@ -279,7 +370,7 @@
             </div>    
         </div>
         <div class="lower">
-            <h5>Made with <i class="fa-solid fa-heart" style="color: #000000;"></i> for GDSC</h5>
+            <h5><tt>Made with <i class="fa-solid fa-heart" style="color: #000000;"></i> for GDSC</tt></h5>
         </div>
 
         
@@ -288,3 +379,11 @@
 
 </body>
 </html>
+
+<!-- 
+    CDN: customer distribution network...
+    - first see similarity with section here mission, prepective, what keep...ek he hath mai lee lo(name it same class)...plan a section model..
+    agar 2 3 baar padding define kar rahe ho toh socho better way mil skta hai...
+    flex-start is good....
+    learnt about defer attribute while linking js it says load js after html
+-->
